@@ -80,7 +80,7 @@ spotify-oauth-express/
 - dotenv: To manage environment variables.
 
 ## Creator
-**Muhammad Asrort Alva 'Izzi**  
+**Muhammad Asror Alva 'Izzi**  
 [Instagram](https://www.instagram.com/asroralva/) | [LinkedIn](https://www.linkedin.com/in/asroralva/)
 
 
