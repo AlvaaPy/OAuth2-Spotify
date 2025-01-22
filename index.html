@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1db954;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .login-container {
+      text-align: center;
+      background: linear-gradient(145deg, #ffffff, #f1f1f1);
+      padding: 50px 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .login-container h1 {
+      font-size: 28px;
+      color: #1db954;
+      margin-bottom: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .login-button {
+      background-color: #1db954;
+      color: white;
+      border: none;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 50px;
+      width: 100%;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .login-button:hover {
+      background-color: #1ed760;
+      transform: scale(1.05);
+    }
+
+    .login-button:focus {
+      outline: none;
+    }
+
+    .login-container p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    .login-container a {
+      color: #1db954;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login with Spotify</h1>
+    <button class="login-button" onclick="loginWithSpotify()">Login</button>
+    <p>Don't have an account? <a href="#">Sign up here</a></p>
+  </div>
+
+  <script>
+    function loginWithSpotify() {
+      // Redirect to the backend login route
+      window.location.href = "http://localhost:3000/login";
+    }
+  </script>
+</body>
+</html>
